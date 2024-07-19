@@ -1,0 +1,282 @@
+/* universal selector overide default padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* universal selector */
+
+
+
+body {
+  background-color: rgba(239, 244, 246, 0.939);
+}
+
+/* navigation bar */
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(147, 134, 232);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#hambargur {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.nav-bar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.nav-bar ul a {
+  text-decoration: none;
+}
+.nav-bar ul li {
+  font-size: 20px;
+  color: white;
+  transition: all 1s;
+}
+.nav-bar ul li:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+/* navigation bar */
+
+
+/* Main container  */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.into {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.into h1 {
+  margin-bottom: 10px;
+}
+.into p {
+  text-align: justify;
+}
+
+
+/* blogs card styling */
+.blogs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog-section {
+  width: 300px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(200, 218, 245);
+  box-shadow: 2px 2px 10px 2px gray;
+  transition: all 1s;
+}
+.blog-section:hover {
+  transform: scale(1.01);
+}
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.blog-section p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.blog-section img {
+  margin-bottom: 20px;
+}
+.blog-section ul {
+  margin-bottom: 20px;
+  list-style-type: none;
+  text-align: justify;
+}
+.blog-section ul li {
+  margin-bottom: 10px;
+}
+.blog-section video {
+  margin-bottom: 20px;
+}
+/* blogs card styling */
+
+
+/* About me */
+.about-me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgb(139, 200, 233);
+  box-shadow: 3px 3px 5px 3px gray;
+  text-align: justify;
+}
+.about-me h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-me p {
+  margin-bottom: 10px;
+}
+
+/* About me */
+
+/* contact me */
+.contact {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: rgb(36, 35, 35);
+}
+.contact h2 {
+  margin-bottom: 10px;
+}
+.form label {
+  font-size: 18px;
+}
+.input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  background-color: rgb(230, 230, 230);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.input:focus {
+  border-bottom: 3px solid black;
+}
+span {
+  color: red;
+}
+.form button {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(128, 109, 214);
+  color: white;
+  font-size: 17px;
+  transition: all 1s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.form button:hover {
+  background-color: white;
+  color: rgb(128, 109, 214);
+}
+.Social {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 70px;
+}
+.Social img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.Social img:hover {
+  transform: scale(1.3);
+}
+
+/* contact me */
+
+/* footer  */
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-links div p {
+  margin-top: 15px;
+  transition: all 1s;
+}
+.footer-links div p:hover {
+  text-decoration: underline;
+  color: orangered;
+  cursor: pointer;
+}
+.footer-links div a{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer  */
+
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 640px) {
+  .nav-bar {
+    justify-content: flex-start;
+  }
+  .nav-bar ul {
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    background-color: rgb(147, 134, 232);
+    text-align: center;
+  }
+  .nav-bar ul li {
+    margin-top: 8px;
+  }
+  #hambargur {
+    display: block;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+}
